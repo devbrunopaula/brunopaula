@@ -1,26 +1,44 @@
-.banner {
-  height: 70vh;
-  width: 100%;
-  background: url('https://miro.medium.com/max/1094/1*MCn1VrXQznTi3JMtAIGK0g.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  position: relative;
-  z-index: -2;
+.welcome {
+  height: 3rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 3.25rem;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 30px 0;
+  }
+  p {
+    padding-top: 30px;
+    color: white;
+  }
 }
 
-.banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  background: linear-gradient(
-    to top,
-    rgba(6, 21, 161, 0.4),
-    rgba(12, 5, 26, 0.3)
-  );
+.welcome-tagline {
+}
+
+.meet {
+  border: solid white;
+  margin-top: 30px;
+  width: 180px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.meet-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  letter-spacing: 0.15rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+.meet-arrowIcon {
+  color: white;
+  font-size: 30px;
+  height: 100%;
 }
