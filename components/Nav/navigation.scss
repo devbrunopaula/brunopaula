@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.bruno {
+  font-size: 1.5rem;
+  background-color: white;
+  padding: 0.1rem 1rem;
+  color: #2a2f4a;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.paula {
+  font-size: 1.4rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title {
+  margin-right: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
