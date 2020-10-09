@@ -7,10 +7,8 @@ function Banner() {
       <div className='welcome'>
         <h1>Hi, my name is Bruno</h1>
         <div className='welcome-tagline'>
-          <p>
-            A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP <br></br>AND
-            RELEASED UNDER THE CREATIVE COMMONS.
-          </p>
+          <p>A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP.</p>
+          <span>RELEASED UNDER THE CREATIVE COMMONS.</span>
           <div className='meet'>
             <button className='meet-button'>LET'S MEET</button>
             <BsArrowRight className='meet-arrowIcon' />
