@@ -8,7 +8,9 @@ export default function Home() {
         <title>Bruno Paula | Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navigation />
+      <div className='banner'>
+        <Navigation />
+      </div>
     </>
   )
 }
