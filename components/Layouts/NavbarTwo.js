@@ -77,12 +77,10 @@ class NavbarTwo extends Component {
                 <ul className='navbar-nav'>
                   <li className='nav-item'>
                     <Link href='#'>
-                      <a className='nav-link'>
-                        Home <i className='icofont-thin-down'></i>
-                      </a>
+                      <a className='nav-link'>Home</a>
                     </Link>
 
-                    <ul className='dropdown-menu mega-dropdown-menu'>
+                    {/* <ul className='dropdown-menu mega-dropdown-menu'>
                       <li className='nav-item'>
                         <Link href='/' activeClassName='active'>
                           <a className='nav-link'>Default Home</a>
@@ -162,7 +160,7 @@ class NavbarTwo extends Component {
                           <a className='nav-link'>Startup Agency Two</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul>*/}
                   </li>
 
                   {/* <li className='nav-item'>
