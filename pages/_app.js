@@ -42,13 +42,13 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <DefaultSeo
-          title='Pungent - React Startups & Digital Agency Templates'
-          description='Pungent - React Startups & Digital Agency Templates. This has been built with React, Next.js, Express.js, and ES6+'
+          title='Bruno Paula - Portfolio'
+          description='Bruno Paula - Portfolio & Projects. This has been built with React, Next.js.'
           openGraph={{
             type: 'website',
             locale: 'en_IE',
-            url: 'https://trynext-react.envytheme.com/',
-            site_name: 'Pungent - React Startups & Digital Agency Templates',
+            url: 'https://brunopaula.com',
+            site_name: 'Bruno Paula - Portfolio & Projects website',
           }}
         />
 
