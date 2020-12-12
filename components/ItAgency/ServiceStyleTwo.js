@@ -64,10 +64,7 @@ class ServiceStyleTwo extends Component {
 
               <div className='col-lg-6'>
                 <div className='service-right-img'>
-                  <img
-                    src='/images/services/backend.svg'
-                    alt='frontend bruno'
-                  />
+                  <img src='/images/services/front.svg' alt='frontend bruno' />
                 </div>
               </div>
             </div>
