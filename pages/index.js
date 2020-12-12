@@ -25,10 +25,10 @@ class ItAgency extends Component {
         <ServiceStyleTwo />
         <WhyChooseUs />
         <FunFactsTwo />
-        <Partner />
-        <Feedback />
+        {/* <Partner /> */}
+        {/* <Feedback /> */}
         <TeamStyleTwo />
-        <PricingStyleThree />
+        {/* <PricingStyleThree /> */}
 
         <LatestNewsSliderTwo />
         <div className='pb-100'>
