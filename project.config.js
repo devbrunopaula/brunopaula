@@ -1,7 +1,7 @@
 import * as contentful from 'contentful'
 
 export const client = contentful.createClient({
-  space: 'cr4pa0xuvlza',
+  space: process.env.CONTENTFUL_SPACE_ID,
   environment: 'master', // defaults to 'master' if not set
-  accessToken: '2UOrRJMYgHEmVpSO_l1ivxIb6rHhZYB_pJjntDkKEmo',
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 })
