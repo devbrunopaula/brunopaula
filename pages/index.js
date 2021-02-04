@@ -13,6 +13,8 @@ import LatestNewsSliderTwo from '../components/Common/LatestNewsSliderTwo'
 import Newsletter from '../components/Common/Newsletter'
 import Footer from '../components/Layouts/Footer'
 import Partner from '../components/Common/Partner'
+// import * as contentful from 'contentful'
+import {client} from '../project.config'
 
 class ItAgency extends Component {
   render() {
@@ -30,7 +32,7 @@ class ItAgency extends Component {
         <TeamStyleTwo />
         {/* <PricingStyleThree /> */}
 
-        <LatestNewsSliderTwo />
+        <LatestNewsSliderTwo blog={this.props} />
         <div className='pb-100'>
           <Newsletter />
         </div>
@@ -41,3 +43,18 @@ class ItAgency extends Component {
 }
 
 export default ItAgency
+
+export const getStaticProps = async () => {
+  // const client = require('contentful').createClient({
+  //   space: 'cr4pa0xuvlza',
+  //   accessToken: '2UOrRJMYgHEmVpSO_l1ivxIb6rHhZYB_pJjntDkKEmo',
+  // })
+
+  const proj = await client.getEntries()
+
+  return {
+    props: {
+      projects: proj.items,
+    },
+  }
+}

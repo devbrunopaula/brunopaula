@@ -11,6 +11,8 @@
   "author": "Bruno.com",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "contentful": "^8.1.7",
     "next": "^9.4.4",
     "next-seo": "^4.5.0",
     "next-videos": "^1.1.4",

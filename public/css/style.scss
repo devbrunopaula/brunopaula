@@ -48,14 +48,14 @@ Default CSS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900&display=swap');
 
-$main-color: #ff2c9c;
+$main-color: #382ab3;
 $gradient-color: linear-gradient(
   to left top,
-  #ff2c9c,
-  #ff287b,
-  #ff395a,
-  #ff5137,
-  #ff6a00
+  #1835d6,
+  #49adf0,
+  // #18307e,
+  // #374bff,
+  // #0059ff
 );
 $main-font-family: 'Open Sans', sans-serif;
 $heading-font-family: 'Saira', sans-serif;
