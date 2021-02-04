@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Link from 'next/link'
+import {info} from '../../utils/info'
 
 class Footer extends Component {
   render() {
@@ -20,34 +21,34 @@ class Footer extends Component {
                 </div>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Whether you have a question or just want to say hi, let's
+                  chat.
                 </p>
 
                 <ul className='social-links'>
                   <li>
-                    <Link href='//www.facebook.com/brunopaulausa'>
+                    <Link href={info.social_media.github}>
                       <a target='_blank'>
-                        <i className='icofont-facebook'></i>
+                        <i className='icofont-github'></i>
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='//twitter.com/devbrunopaula'>
+                    <Link href={info.social_media.twitter}>
                       <a target='_blank'>
                         <i className='icofont-twitter'></i>
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='//www.linkedin.com/in/bruno-paula/'>
+                    <Link href={info.social_media.linkedin}>
                       <a target='_blank'>
                         <i className='icofont-linkedin'></i>
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='//www.instagram.com/devbrunopaula/'>
+                    <Link href={info.social_media.instagram}>
                       <a target='_blank'>
                         <i className='icofont-instagram'></i>
                       </a>
@@ -131,13 +132,16 @@ class Footer extends Component {
 
                 <ul className='get-in-touch'>
                   <li>
-                    <i className='icofont-home'></i> Boston Massachusetts, USA.
+                    <i className='icofont-home'></i>
+                    {`${info.address.city},
+                    ${info.address.state} USA.`}
+                  </li>
+                  <li></li>
+                  <li>
+                    <i className='icofont-live-support'></i> {`${info.phone}`}
                   </li>
                   <li>
-                    <i className='icofont-live-support'></i> 774-268-1024
-                  </li>
-                  <li>
-                    <i className='icofont-envelope'></i> hello@pungent.com
+                    <i className='icofont-envelope'></i> {`${info.email}`}
                   </li>
                 </ul>
               </div>
