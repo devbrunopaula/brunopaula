@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import axios from 'axios'
+import moment from 'moment'
+import DisqusComments from '../Common/Disqus'
 
 export const LatestProjects = ({data}) => {
   return (
@@ -14,7 +16,7 @@ export const LatestProjects = ({data}) => {
                   <div className='blog-image'>
                     <Link
                       href={{
-                        pathname: '/blog-details',
+                        pathname: '/portfolio-details',
                         query: {id: project.sys.id},
                       }}
                     >
@@ -22,23 +24,28 @@ export const LatestProjects = ({data}) => {
                         <img
                           src={project.fields.image.fields.file.url}
                           alt='image'
+                          height='280'
                         />
                       </a>
                     </Link>
 
                     <div className='post-tag'>
                       <Link href='#'>
-                        <a>Technology</a>
+                        <a>Technology </a>
                       </Link>
                     </div>
                   </div>
 
                   <div className='blog-post-content'>
-                    <span className='date'>Feb 15, 2020</span>
+                    <span className='date'>
+                      {moment(`${project && project.fields.date}`).format(
+                        'MMM Do YYYY'
+                      )}
+                    </span>
                     <h3>
                       <Link
                         href={{
-                          pathname: '/blog-details',
+                          pathname: '/portfolio-details',
                           query: {id: project.id},
                         }}
                       >
@@ -48,7 +55,7 @@ export const LatestProjects = ({data}) => {
 
                     <p>{project.fields.body}</p>
 
-                    <Link href='/blog-details'>
+                    <Link href='/portfolio-details'>
                       <a className='read-more-btn'>
                         Read More
                         <i className='icofont-thin-double-right'></i>
@@ -60,6 +67,7 @@ export const LatestProjects = ({data}) => {
             )
           })
         : ''}
+      {/* <DisqusComments /> */}
     </>
   )
 }
