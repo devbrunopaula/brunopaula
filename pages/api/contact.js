@@ -5,7 +5,6 @@ export default async (req, res) => {
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
-  const data = []
   const msg = {
     to: email,
     from: 'devbrunopaula@gmail.com', // Change to your verified sender
@@ -17,7 +16,7 @@ export default async (req, res) => {
 
   try {
     await sgMail.send(msg)
-    await sgMail.send(toSender)
+
     res.status(200).json({
       data: msg,
       message: 'Message sent successfully.',

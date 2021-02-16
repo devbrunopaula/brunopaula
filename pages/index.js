@@ -8,8 +8,10 @@ import WhyChooseUs from '../components/ItAgency/WhyChooseUs'
 import FunFactsTwo from '../components/Common/FunFactsTwo'
 import Feedback from '../components/Common/Feedback'
 import PricingStyleThree from '../components/Pricing/PricingStyleThree'
-import TeamStyleTwo from '../components/Common/TeamStyleTwo'
-import LatestNewsSliderTwo from '../components/Common/LatestNewsSliderTwo'
+//import TeamStyleTwo from '../components/Common/TeamStyleTwo'
+import Teams from '../components/Common/Teams'
+//import LatestNewsSliderTwo from '../components/Common/LatestNewsSliderTwo'
+import LatestProjects from '../components/Common/LatestNewsSliderTwo'
 import Newsletter from '../components/Common/Newsletter'
 import Footer from '../components/Layouts/Footer'
 import Partner from '../components/Common/Partner'
@@ -29,10 +31,10 @@ class ItAgency extends Component {
         <FunFactsTwo />
         {/* <Partner /> */}
         {/* <Feedback /> */}
-        <TeamStyleTwo />
+        {/* <Teams /> */}
         {/* <PricingStyleThree /> */}
 
-        <LatestNewsSliderTwo blog={this.props} />
+        <LatestProjects blog={this.props} />
         <div className='pb-100'>
           <Newsletter />
         </div>

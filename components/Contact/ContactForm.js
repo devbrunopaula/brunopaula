@@ -14,7 +14,7 @@ const ContactForm = () => {
 
   const handleChanges = (event) => {
     event.persist()
-    setValues((values) => ({
+    setForm((values) => ({
       ...values,
       [event.target.name]: event.target.value,
     }))
@@ -24,6 +24,11 @@ const ContactForm = () => {
     e.preventDefault()
 
     const data = await axios.post('/api/contact', form)
+    console.log(data)
+
+    setTimeout(() => {
+      rou
+    }, 1000)
   }
 
   return (
