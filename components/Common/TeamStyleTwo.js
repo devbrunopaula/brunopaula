@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Link from 'next/link'
 
-class Teams extends Component {
+class TeamStyleTwo extends Component {
   render() {
     return (
       <div className='pt-100 pb-70'>
@@ -188,4 +188,4 @@ class Teams extends Component {
   }
 }
 
-export default Teams
+export default TeamStyleTwo
