@@ -11,6 +11,7 @@ const images = [
   '/images/portfolio/portfolio3.jpg',
   '/images/portfolio/portfolio4.jpg',
   '/images/portfolio/portfolio5.jpg',
+  'last',
 ]
 
 const PortfolioDetailsContent = ({id}) => {
