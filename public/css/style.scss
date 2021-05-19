@@ -13,7 +13,7 @@ This files table contents are outlined below >>>>>
 ** - Default CSS
 ** - Preloader CSS
 ** - Header CSS
-** - Main Banner CSS
+** - Main Banner 
 ** - Featured Services CSS
 ** - About CSS
 ** - Case Studies CSS
@@ -3148,7 +3148,7 @@ Team CSS
   margin-bottom: 30px;
   transition: $transition;
   img {
-    width: 100%;
+    width: 50%;
   }
   .team-caption {
     margin-top: 25px;
@@ -3193,7 +3193,7 @@ Team CSS
     .social-links {
       position: absolute;
       background: $gradient-color;
-      width: 100%;
+      width: 50%;
       height: 0%;
       top: 0;
       left: 0;
@@ -4897,7 +4897,9 @@ Page Title CSS
   }
 
   &.bg-one {
-    background: transparent url(/images/page-banner1.jpg) right top no-repeat;
+    background: transparent
+      url('https://tngwebsolutions.ca/wp-content/uploads/2019/12/web-development-trends-2018-header-1.jpg')
+      no-repeat;
   }
 }
 .shape1 {

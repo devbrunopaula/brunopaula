@@ -2,7 +2,6 @@ import React from 'react'
 import {info} from '../../utils/info'
 
 const ContactInfo = () => {
-  console.log(info)
   return (
     <div className='contact-info-area pt-100 pb-70'>
       <div className='container'>

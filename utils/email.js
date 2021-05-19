@@ -14,5 +14,5 @@ sgMail
     console.log('Email sent')
   })
   .catch((error) => {
-    console.log(error)
+    console.log('There is an error')
   })

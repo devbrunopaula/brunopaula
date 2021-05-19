@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react'
 
 class PageBanner extends Component {
-    render() {
+  render() {
+    let {pageTitle} = this.props
 
-        let { pageTitle } = this.props;
-
-        return (
-            <div className="page-title-area bg-one">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="container">
-                            <h2>{pageTitle}</h2>
-                        </div>
-                    </div>
-                </div>
+    return (
+      <div className='page-title-area bg-one'>
+        <div className='d-table'>
+          <div className='d-table-cell'>
+            <div className='container'>
+              <h2>{pageTitle}</h2>
             </div>
-        );
-    }
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
-export default PageBanner;
+export default PageBanner

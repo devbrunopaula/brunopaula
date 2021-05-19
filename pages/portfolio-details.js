@@ -22,8 +22,4 @@ const PortfolioDetails = () => {
   )
 }
 
-// PortfolioDetails.getInitialProps = async () => {
-//   // const data = await getPreojectById()
-//   // console.log('data @Port - Details', data)
-// }
 export default PortfolioDetails
