@@ -9,7 +9,7 @@ import Partner from '../components/Common/Partner'
 import CtaAreaTwo from '../components/Common/CtaAreaTwo'
 import Footer from '../components/Layouts/Footer'
 
-class Aabout extends Component {
+class About extends Component {
   render() {
     return (
       <React.Fragment>
@@ -27,4 +27,4 @@ class Aabout extends Component {
   }
 }
 
-export default Aabout
+export default About

@@ -51,10 +51,7 @@ const WorksStyleOne = ({data}) => {
       <div className='container-fluid'>
         <div className='section-title'>
           <h2>Top Projects</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p>list</p>
         </div>
 
         {display ? (
