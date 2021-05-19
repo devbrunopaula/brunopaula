@@ -1,15 +1,9 @@
 import * as contentful from 'contentful'
 
-// export const client = contentful.createClient({
-//   space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-//   environment: 'master', // defaults to 'master' if not set
-//   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
-// })
-
 export const client = contentful.createClient({
-  space: 'cr4pa0xuvlza',
-  // environment: 'master', // defaults to 'master' if not set
-  accessToken: '2UOrRJMYgHEmVpSO_l1ivxIb6rHhZYB_pJjntDkKEmo',
+  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  environment: 'master', // defaults to 'master' if not set
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
 })
 
 export const getProjects = async () => {
