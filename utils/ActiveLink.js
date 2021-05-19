@@ -4,7 +4,6 @@ import React, {Children} from 'react'
 
 const ActiveLink = ({router, children, ...props}) => {
   const child = Children.only(children)
-  console.log('route')
 
   let className = child.props.className || ''
   if (router.pathname === props.href && props.activeClassName) {
