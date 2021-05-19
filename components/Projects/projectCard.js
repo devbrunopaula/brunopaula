@@ -9,16 +9,18 @@ const ProjectCard = ({data, id}) => {
         <h3>
           <Link
             href={{
-              pathname: '/portfolio-details',
-              query: {id},
+              pathname: `/projects/${id}`,
             }}
           >
             <a>{data.title}</a>
           </Link>
         </h3>
 
-        <Link href={{pathname: '/portfolio-details', query: {id}}}>
+        {/* <Link href={{pathname: '/projects-details', query: {id}}}>
           <a className='custom-btn'>Read More</a>
+        </Link> */}
+        <Link href={{pathname: `/projects/${id}`}}>
+          <a className='custom-btn'>More Info</a>
         </Link>
       </div>
     </div>

@@ -16,8 +16,7 @@ export const LatestProjects = ({data}) => {
                   <div className='blog-image'>
                     <Link
                       href={{
-                        pathname: '/portfolio-details',
-                        query: {id: project.sys.id},
+                        pathname: `/projects/${project.sys.id}`,
                       }}
                     >
                       <a>
@@ -45,8 +44,7 @@ export const LatestProjects = ({data}) => {
                     <h3>
                       <Link
                         href={{
-                          pathname: '/portfolio-details',
-                          query: {id: project.id},
+                          pathname: `/projects/${project.sys.id}`,
                         }}
                       >
                         <a>{project.fields.title}</a>
@@ -55,8 +53,12 @@ export const LatestProjects = ({data}) => {
 
                     <p>{project.fields.body}</p>
 
-                    <Link href='/portfolio-details'>
-                      <a className='read-more-btn'>
+                    <Link
+                      href={{
+                        pathname: `/projects/${project.sys.id}`,
+                      }}
+                    >
+                      <a className=''>
                         Read More
                         <i className='icofont-thin-double-right'></i>
                       </a>

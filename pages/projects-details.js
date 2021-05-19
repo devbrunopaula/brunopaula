@@ -10,11 +10,10 @@ const newid = 'lGoZ5r72Y9wGhvP57TFgN'
 
 const PortfolioDetails = () => {
   const route = useRouter()
-
   return (
     <>
       <NavbarTwo />
-      <PageBanner pageTitle='UX for Mobile Apps' />
+      <PageBanner pageTitle='Our Projects' />
       <PortfolioDetailsContent id={route.query.id} />
       <CtaAreaTwo />
       <Footer />

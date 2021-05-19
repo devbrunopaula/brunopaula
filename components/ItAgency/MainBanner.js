@@ -30,7 +30,7 @@ class MainBanner extends Component {
                         <a className='btn btn-primary'>Let's Meet</a>
                       </Link>
 
-                      <Link href='/portfolio'>
+                      <Link href='/projects'>
                         {/* <a
                           // onClick={(e) => {
                           //   e.preventDefault()

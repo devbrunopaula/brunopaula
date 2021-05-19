@@ -5,14 +5,17 @@ import WorksStyleOne from '../components/Portfolio/WorksStyleOne'
 import WorksStyleTwo from '../components/Portfolio/WorksStyleTwo'
 import CtaAreaTwo from '../components/Common/CtaAreaTwo'
 import Footer from '../components/Layouts/Footer'
-
+import {useRouter} from 'next/router'
 import {getProjects} from '../project.config'
 
 const Portfolio = (props) => {
+  const route = useRouter()
+
+  console.log(route.asPath)
   return (
     <>
       <NavbarTwo />
-      <PageBanner pageTitle='Projects' />
+      <PageBanner pageTitle='Our Projects' />
       <WorksStyleOne data={props.items} />
       <WorksStyleTwo />
       <CtaAreaTwo />
