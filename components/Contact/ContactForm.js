@@ -24,7 +24,6 @@ const ContactForm = () => {
     e.preventDefault()
 
     const data = await axios.post('/api/contact', form)
-    console.log(data)
 
     setTimeout(() => {
       rou

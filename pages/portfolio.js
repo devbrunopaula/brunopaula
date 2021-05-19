@@ -5,16 +5,14 @@ import WorksStyleOne from '../components/Portfolio/WorksStyleOne'
 import WorksStyleTwo from '../components/Portfolio/WorksStyleTwo'
 import CtaAreaTwo from '../components/Common/CtaAreaTwo'
 import Footer from '../components/Layouts/Footer'
-import axios from 'axios'
-import client from '../project.config'
+
 import {getProjects} from '../project.config'
 
 const Portfolio = (props) => {
-  console.log(props)
   return (
     <>
       <NavbarTwo />
-      <PageBanner pageTitle='Our Portfolio' />
+      <PageBanner pageTitle='Projects' />
       <WorksStyleOne data={props.items} />
       <WorksStyleTwo />
       <CtaAreaTwo />

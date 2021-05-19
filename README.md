@@ -1,6 +1,6 @@
 # # Bruno Paula
 
-> Porfolio - Next Js Framework
+> Portfolio - Next Js Framework
 
 ## Table of contents
 
@@ -44,6 +44,7 @@ List of features ready and TODOs for future development
 - Axios
 - Font Awesome
 - Redux
+  d
 
 ## Status
 
@@ -55,4 +56,4 @@ Based on my hard work and long nights studing.
 
 ## Contact
 
-Created by [@devbrunopaula](https://www.devbrunopaula/) - feel free to contact me! [devbrunopaula@gmail.com](mailto:devbrunopaula@gmail.com?subject=[GitHub]%20Source%bruno%20Porfolio)
+Created by [@devbrunopaula](https://www.devbrunopaula/) - feel free to contact me! [devbrunopaula@gmail.com](mailto:devbrunopaula@gmail.com?subject=[GitHub]%20Source%bruno%20Portfolio)

@@ -23,6 +23,6 @@ export default async (req, res) => {
       email: email,
     })
   } catch (error) {
-    console.log('ERROR', error)
+    console.log('ERROR', 'There is an error')
   }
 }

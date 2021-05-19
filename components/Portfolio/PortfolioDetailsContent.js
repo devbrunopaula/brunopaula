@@ -45,6 +45,7 @@ const PortfolioDetailsContent = ({id}) => {
     getASingleProject(id)
   }, [])
 
+  console.log(projects)
   return (
     <>
       {isOpenImage && (
@@ -53,16 +54,6 @@ const PortfolioDetailsContent = ({id}) => {
           nextSrc={images[(photoIndex + 1) % images.length]}
           prevSrc={images[(photoIndex + images.length - 1) % images.length]}
           onCloseRequest={() => setIsOpenImage(false)}
-          // onMovePrevRequest={
-          //   // this.setState({
-          //   //   photoIndex: (photoIndex + images.length - 1) % images.length,
-          //   // })
-          // }
-          // onMoveNextRequest={() =>
-          //   this.setState({
-          //     photoIndex: (photoIndex + 1) % images.length,
-          //   })
-          // }
         />
       )}
 
@@ -120,11 +111,13 @@ const PortfolioDetailsContent = ({id}) => {
 
                 <div className='single-info-box'>
                   <div className='p-1'>
-                    <Link href='#'>
-                      <a className='default-btn' target='_blank'>
-                        Live Preview
-                      </a>
-                    </Link>
+                    <a
+                      className='default-btn'
+                      target='_blank'
+                      href={`//${projects && projects.fields.projectLink}`}
+                    >
+                      Live Preview
+                    </a>
                   </div>
                   <div className='pt-2'>
                     <a
