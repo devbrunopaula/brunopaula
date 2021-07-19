@@ -1,28 +1,52 @@
 const sgMail = require('@sendgrid/mail')
 
 export default async (req, res) => {
-  const {email, phone_number, msg_subject, message} = await req.body
+	const {name, email, phone_number, msg_subject, message} = await req.body
 
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+	sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+	const htmlMessage = `
+	Hi ${name},<br>
 
-  const msg = {
-    to: email,
-    from: 'devbrunopaula@gmail.com', // Change to your verified sender
-    cc: 'devbrunopaula@gmail.com',
-    subject: msg_subject,
-    text: message,
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-  }
+<p>Thanks so much for reaching out…
 
-  try {
-    await sgMail.send(msg)
+I have received your email and will get back to you as soon as possible.<br>
 
-    res.status(200).json({
-      data: msg,
-      message: 'Message sent successfully.',
-      email: email,
-    })
-  } catch (error) {
-    console.log('ERROR', 'There is an error')
-  }
+
+<p>I look forward to chatting soon!<br><br>
+
+<p>Thanks,</p><br>
+<p><strong>Bruno Paula<strong></p><br>
+<p>Phone: (772) 208-9486‬</p>
+	`
+	const msg = [
+		{
+			to: email,
+			from: 'devbrunopaula@gmail.com', // Change to your verified sender
+			subject: msg_subject,
+			html: htmlMessage,
+		},
+		{
+			to: 'devbrunopaula@gmail.com',
+			from: 'devbrunopaula@gmail.com', // Change to your verified sender
+			subject: 'Message from your Portifolio Page',
+			text: `
+			Name: ${name}.
+			Subject: ${msg_subject}
+			Phone: ${phone_number}
+			message: ${message}
+			`,
+		},
+	]
+
+	try {
+		const test = await sgMail.send(msg)
+
+		res.status(202).json({
+			data: msg,
+			message: 'Message sent successfully.',
+			email: email,
+		})
+	} catch (error) {
+		console.log('ERROR', 'There is an error')
+	}
 }
