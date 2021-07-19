@@ -8,25 +8,23 @@ import Footer from '../components/Layouts/Footer'
 import {useRouter} from 'next/router'
 import {getProjects} from '../project.config'
 
-const Portfolio = (props) => {
-  const route = useRouter()
-
-  console.log(route.asPath)
-  return (
-    <>
-      <NavbarTwo />
-      <PageBanner pageTitle='Our Projects' />
-      <WorksStyleOne data={props.items} />
-      <WorksStyleTwo />
-      <CtaAreaTwo />
-      <Footer />
-    </>
-  )
+const Portfolio = props => {
+	const route = useRouter()
+	return (
+		<>
+			<NavbarTwo />
+			<PageBanner pageTitle='Our Projects' />
+			<WorksStyleOne data={props.items} />
+			<WorksStyleTwo />
+			<CtaAreaTwo />
+			<Footer />
+		</>
+	)
 }
 
 Portfolio.getInitialProps = async () => {
-  const data = await getProjects()
+	const data = await getProjects()
 
-  return data
+	return data
 }
 export default Portfolio

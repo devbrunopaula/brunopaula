@@ -13,33 +13,33 @@ import Partner from '../components/Common/Partner'
 import {client} from '../project.config'
 
 class ItAgency extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Navbar />
+	render() {
+		return (
+			<React.Fragment>
+				<Navbar />
 
-        <MainBanner />
-        <OurServices />
-        <ServiceStyleTwo />
-        <WhyChooseUs />
-        <FunFactsTwo />
+				<MainBanner />
+				<OurServices />
+				<ServiceStyleTwo />
+				{/* <WhyChooseUs /> */}
+				{/* <FunFactsTwo /> */}
 
-        <LatestProjects blog={this.props} />
+				<LatestProjects blog={this.props} />
 
-        <Footer />
-      </React.Fragment>
-    )
-  }
+				<Footer />
+			</React.Fragment>
+		)
+	}
 }
 
 export default ItAgency
 
 export const getStaticProps = async () => {
-  const proj = await client.getEntries()
+	const proj = await client.getEntries()
 
-  return {
-    props: {
-      projects: proj.items,
-    },
-  }
+	return {
+		props: {
+			projects: proj.items,
+		},
+	}
 }
