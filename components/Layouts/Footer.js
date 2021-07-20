@@ -78,6 +78,15 @@ class Footer extends Component {
 											</a>
 										</Link>
 									</li>
+									<li>
+										<a
+											href='https://github.com/devbrunopaula/brunopaula/blob/main/Resume.pdf?raw=true'
+											data-toggle='tooltip'
+											title='Resume Download'
+										>
+											<i className='icofont-link'></i>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -108,7 +117,10 @@ class Footer extends Component {
 										</Link>
 									</li>
 									<li>
-										<a href='/resume.pdf' target='_blank'>
+										<a
+											href='https://drive.google.com/file/d/1_11I0xws43parL7PhLN0CVHcTTKHIjhY/view?usp=sharing'
+											target='_blank'
+										>
 											My Resume
 										</a>
 									</li>

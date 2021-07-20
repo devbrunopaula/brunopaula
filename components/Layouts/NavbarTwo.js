@@ -112,8 +112,8 @@ class NavbarTwo extends Component {
                         >
                           <a className='nav-link'>Portfolio Details</a>
                         </Link>
-                      </li> */}
-										{/* </ul> */}
+                      </li> 
+										 </ul> */}
 									</li>
 
 									<li className='nav-item'>
@@ -128,7 +128,7 @@ class NavbarTwo extends Component {
 
 								<div className='others-options'>
 									<a
-										href='/resume.pdf'
+										href='https://drive.google.com/file/d/1_11I0xws43parL7PhLN0CVHcTTKHIjhY/view?usp=sharing'
 										target='_blank'
 										className='btn btn-primary'
 									>
