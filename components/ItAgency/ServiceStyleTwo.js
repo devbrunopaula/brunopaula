@@ -14,14 +14,6 @@ class ServiceStyleTwo extends Component {
 										<h2 className='title'>
 											Frontend Development
 										</h2>
-										<p>
-											Lorem ipsum dolor sit amet,
-											consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore
-											et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud
-											exercitation ullamco laboris.
-										</p>
 									</div>
 
 									<div className='row'>
@@ -88,14 +80,6 @@ class ServiceStyleTwo extends Component {
 										<h2 className='title'>
 											Backend Development
 										</h2>
-										<p>
-											Lorem ipsum dolor sit amet,
-											consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore
-											et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud
-											exercitation ullamco laboris.
-										</p>
 									</div>
 
 									<div className='row'>
@@ -144,14 +128,6 @@ class ServiceStyleTwo extends Component {
 										<h2 className='title'>
 											Cloud Hosting Services
 										</h2>
-										<p>
-											Lorem ipsum dolor sit amet,
-											consectetur adipiscing elit, sed do
-											eiusmod tempor incididunt ut labore
-											et dolore magna aliqua. Ut enim ad
-											minim veniam, quis nostrud
-											exercitation ullamco laboris.
-										</p>
 									</div>
 
 									<div className='row'>

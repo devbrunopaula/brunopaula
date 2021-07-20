@@ -12,6 +12,18 @@ class OurServices extends Component {
 							I am passionate about building excellent software
 							that improves the lives of those around me..
 						</p>
+						<div className='mt-5 service-style-two'>
+							<a
+								href='https://github.com/devbrunopaula'
+								target='_blank'
+							>
+								<img
+									src='./images/github.png'
+									height='30'
+									alt='github'
+								/>
+							</a>
+						</div>
 					</div>
 
 					<div className='row'>
