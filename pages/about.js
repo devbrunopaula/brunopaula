@@ -10,21 +10,21 @@ import CtaAreaTwo from '../components/Common/CtaAreaTwo'
 import Footer from '../components/Layouts/Footer'
 
 class About extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <NavbarTwo />
-        <PageBanner pageTitle='About Me' />
-        <AboutContent />
-        <Partner />
-        {/* <FunFactsTwo /> */}
-        {/* <TeamStyleThree /> */}
-        <Feedback />
-        <CtaAreaTwo />
-        <Footer />
-      </React.Fragment>
-    )
-  }
+	render() {
+		return (
+			<React.Fragment>
+				<NavbarTwo />
+				<PageBanner pageTitle='About Me' />
+				<AboutContent />
+				<Partner />
+				{/* <FunFactsTwo /> */}
+				{/* <TeamStyleThree /> */}
+				{/* <Feedback /> */}
+				<CtaAreaTwo />
+				<Footer />
+			</React.Fragment>
+		)
+	}
 }
 
 export default About
