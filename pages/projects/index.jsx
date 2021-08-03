@@ -41,5 +41,6 @@ export async function getStaticProps(contex) {
 		props: {
 			data: result.items,
 		},
+		revalidate: 2,
 	}
 }

@@ -1,34 +1,41 @@
 {
-  "name": "Bruno",
-  "version": "1.0.0",
-  "description": "Pungent - React Startups & Digital Agency Templates",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "author": "Bruno.com",
-  "license": "MIT",
-  "dependencies": {
-    "@sendgrid/mail": "^7.4.2",
-    "axios": "^0.21.1",
-    "contentful": "^8.1.7",
-    "disqus-react": "^1.0.11",
-    "moment": "^2.29.1",
-    "next": "^10.2.1",
-    "next-seo": "^4.5.0",
-    "next-videos": "^1.1.4",
-    "react": "^16.13.1",
-    "react-accessible-accordion": "^3.0.1",
-    "react-dom": "^16.13.1",
-    "react-image-lightbox": "^5.1.1",
-    "react-modal-video": "^1.2.3",
-    "react-owl-carousel3": "^2.2.5",
-    "react-particles-js": "^2.7.1",
-    "react-typist": "^2.0.5",
-    "react-visibility-sensor": "^5.1.1",
-    "react-wow": "^1.0.0",
-    "sass": "^1.26.8"
-  }
+	"name": "Bruno",
+	"version": "1.0.0",
+	"description": "Pungent - React Startups & Digital Agency Templates",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"test": "jest"
+	},
+	"author": "Bruno.com",
+	"license": "MIT",
+	"dependencies": {
+		"@sendgrid/mail": "^7.4.2",
+		"axios": "^0.21.1",
+		"contentful": "^8.1.7",
+		"disqus-react": "^1.0.11",
+		"moment": "^2.29.1",
+		"next": "^10.2.1",
+		"next-seo": "^4.5.0",
+		"next-videos": "^1.1.4",
+		"react": "^16.13.1",
+		"react-accessible-accordion": "^3.0.1",
+		"react-dom": "^16.13.1",
+		"react-image-lightbox": "^5.1.1",
+		"react-modal-video": "^1.2.3",
+		"react-owl-carousel3": "^2.2.5",
+		"react-particles-js": "^2.7.1",
+		"react-typist": "^2.0.5",
+		"react-visibility-sensor": "^5.1.1",
+		"react-wow": "^1.0.0",
+		"sass": "^1.26.8"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^12.0.0",
+		"dotenv": "^10.0.0",
+		"jest": "^27.0.6"
+	}
 }
