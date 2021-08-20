@@ -128,7 +128,7 @@ class NavbarTwo extends Component {
 
 								<div className='others-options'>
 									<a
-										href='https://drive.google.com/file/d/1_11I0xws43parL7PhLN0CVHcTTKHIjhY/view?usp=sharing'
+										href='https://drive.google.com/file/d/1MFln-_iaOaC495OcWM5vloUKEbITGxyN/view?usp=sharing'
 										target='_blank'
 										className='btn btn-primary'
 									>
