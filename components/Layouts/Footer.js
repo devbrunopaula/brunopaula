@@ -80,7 +80,7 @@ class Footer extends Component {
 									</li>
 									<li>
 										<a
-											href='https://github.com/devbrunopaula/brunopaula/blob/main/Resume.pdf?raw=true'
+											href='https://drive.google.com/file/d/1MFln-_iaOaC495OcWM5vloUKEbITGxyN/view?usp=sharing'
 											data-toggle='tooltip'
 											title='Resume Download'
 										>
